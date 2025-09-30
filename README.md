@@ -1,15 +1,15 @@
 # Ứng Dụng Quản Lý Người Dùng
 
-Bài tập số 2.2 - Môn Lập Trình Mạng Căn Bản (NT106.Q14)
+Bài tập Exercise2.2 - Môn Lập Trình Mạng Căn Bản - Trường ĐH CNTT - ĐHQG TP.HCM (UIT)
 
 ## 📖 Giới Thiệu
 
-Ứng dụng thực hiện quản lý người dùng với chức năng chính là đăng ký tài khoản, đăng nhập, và hiển thị thông tin cơ bản của người dùng. Dữ liệu được lưu bằng SQLite, mật khẩu được mã hóa SHA-256, giao diện xây dựng trên C# Windows Forms.
+Ứng dụng thực hiện quản lý người dùng với chức năng chính là đăng kí tài khoản, đăng nhập, và hiển thị thông tin cơ bản của người dùng. Dữ liệu được lưu bằng SQLite, mật khẩu được mã hóa SHA-256, giao diện xây dựng trên C# Windows Forms.
 
 ### Mục Đích Bài Tập
 
 - Xây dựng ứng dụng desktop với giao diện thân thiện.
-- Thực hiện chức năng xác thực người dùng hiệu quả (đăng ký, đăng nhập).
+- Thực hiện chức năng xác thực người dùng hiệu quả (đăng kí, đăng nhập).
 - Mã hóa mật khẩu khi lưu trữ.
 - Lưu thông tin, kiểm tra trùng lặp username/email và xử lý logic đầu vào.
 
@@ -27,7 +27,7 @@ Bài tập số 2.2 - Môn Lập Trình Mạng Căn Bản (NT106.Q14)
 
 ## 🛠️ Công Nghệ Sử Dụng
 
-- C#
+- Ngôn ngữ lập trình: C#
 - .NET Framework 4.7.2
 - Windows Forms
 - Visual Studio 2022
@@ -35,7 +35,7 @@ Bài tập số 2.2 - Môn Lập Trình Mạng Căn Bản (NT106.Q14)
 
 ## ✨ Tính Năng
 
-### 1. Đăng ký tài khoản
+### 1. đăng kí tài khoản
 
 - Nhập username, email, mật khẩu, xác nhận mật khẩu.
 - Kiểm tra hợp lệ đầu vào, kiểm tra trùng lặp username và email.
@@ -69,7 +69,7 @@ cd Exercise2.2-Nhom12-NT106.Q14
 
 ### Bước 2: Mở Project
 
-1. Mở Visual Studio 2019/2022
+1. Mở Visual Studio
 2. File → Open → Project/Solution
 3. Chọn file `.sln` trong thư mục đã clone
 
@@ -80,9 +80,9 @@ cd Exercise2.2-Nhom12-NT106.Q14
 
 ## 📚 Hướng Dẫn Sử Dụng
 
-### Đăng ký tài khoản mới
+### đăng kí tài khoản mới
 
-1. Mở ứng dụng, chọn đăng ký
+1. Mở ứng dụng, chọn đăng kí
 2. Điền username, email, mật khẩu, xác nhận mật khẩu
 3. Nhấn "Đăng kí"
 
@@ -97,14 +97,26 @@ cd Exercise2.2-Nhom12-NT106.Q14
 
 ## 🖼️ Giao Diện Ứng Dụng
 
-Mô tả các màn hình chính:
+### Màn Hình Đăng Nhập
 
-- Màn hình đăng nhập: Nhập username, mật khẩu
-- Màn hình đăng ký: Nhập thông tin user mới
-- Màn hình chính: Hiển thị thông tin user sau đăng nhập
+![Giao diện đăng nhập](https://sv2.anhsieuviet.com/2025/09/29/imageda4cf264fb30f922.png)
+
+*Màn hình đăng nhập với các trường username và password*
+
+### Màn Hình đăng kí
+
+![Giao diện đăng kí](https://sv2.anhsieuviet.com/2025/09/29/image48a878a566f0b40d.png)
+
+*Màn hình đăng kí tài khoản mới với form nhập thông tin đầy đủ*
+
+### Màn Hình Chính
+
+![Giao diện chính](https://sv2.anhsieuviet.com/2025/09/29/image20b064c5674636e2.png)
+
+*Giao diện chính sau khi đăng nhập thành công, hiển thị danh sách người dùng*
 
 ## 📝 Ghi Chú
 
 - Dữ liệu lưu tại file SQLite `TaiKhoan.db`.
-- Mật khẩu được lưu dưới dạng SHA-256 hash, không lưu plain text.
+- Mật khẩu được lưu dưới dạng SHA-256 hash.
 - Hệ thống kiểm tra đầu vào và thông báo lỗi rõ ràng.
