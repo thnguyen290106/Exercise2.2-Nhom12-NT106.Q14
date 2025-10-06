@@ -23,7 +23,7 @@ Bài tập Exercise2.2 - Môn Lập Trình Mạng Căn Bản - Trường ĐH CNT
 | 24520331 | Trần Minh Đức     |
 | 24521213 | Trần Thanh Nguyên |
 | 24521538 | Trần Sơn          |
-| 24521560 | Trần Văn Tài      |
+| 24521560 | Trần Văn Tài      | 
 
 ## 🛠️ Công Nghệ Sử Dụng
 
